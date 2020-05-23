@@ -229,6 +229,9 @@ section#section-01 #retangle {
 
 
 /* Section 02 */
+section#section-02 {
+  padding-top: 20px;
+}
 
 section#section-02 .containers {
   display: flex;
@@ -236,24 +239,26 @@ section#section-02 .containers {
   flex-direction: row;
   max-width: var(--maxWidth);
   width: 100%;
-  padding: 80px;
+  padding: 0 80px 80px 80px;
+}
+
+section#section-02 .containers:first-child {
+  padding: 80px 80px 0 80px;
 }
 
 section#section-02 .containers div.content {
   width: 100%;
-  max-width: 460px;
+  max-width: 460;
+  min-width: 450px;
 }
 
 section#section-02 .containers .imgs {
   display: flex;
-  text-align: center;
   justify-content: center;
   position: relative;
   width: 100%;
   max-width: 600px;
-  min-width: 580px;
   max-height: 580px;
-  min-height: 400px;
   margin: 0 50px;
 }
 
@@ -263,15 +268,14 @@ section#section-02 .containers .imgs {
 }
 
 section#section-02 .containers .imgs img.main {
-  max-width: 80%;
-  min-width: 80%;
+  height: 60%;
   margin-top: 20px;
 }
 
 section#section-02 .containers .imgs .circles {
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background: #0000FF 0% 0% no-repeat padding-box;
   opacity: 0.01;
@@ -285,7 +289,7 @@ section#section-02 .containers .imgs .circle-01 {
 section#section-02 .containers .imgs .circle-02 {
   width: 250px;
   height: 250px;
-  bottom: 0;
+  bottom: 100px;
   left: 0;
 }
 
