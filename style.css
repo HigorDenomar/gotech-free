@@ -142,7 +142,6 @@ section.sections {
 section#section-01 {
   padding-top: var(--header-height);
   height: 100vh;
-
 }
 
 .details {
@@ -345,6 +344,7 @@ div.form-container {
   margin-top: auto;
   display: flex;
   height: 100%;
+  z-index: 5;
 }
 
 div.form-container form.form {
@@ -354,7 +354,6 @@ div.form-container form.form {
   margin-bottom: 50px;
   padding: 30px 30px;
   width: 620px;
-  z-index: 2;
 }
 
 div.form-container form.form .input-group {
@@ -387,6 +386,22 @@ div.form-container form.form button[type=submit] {
 
 div.form-container .form {
   position: relative;
+}
+
+div.form-container .form img#line, img#airplane {
+  position: absolute;
+  transform: translateY(80px);
+  z-index: -1;
+}
+
+div.form-container .form img#line {
+  height: 150px;
+  right: -100px;
+  transform: translateY(95px);
+}
+
+div.form-container .form img#airplane {
+  right: -165px;
 }
 
 div.form-container .form img.imgs {
@@ -462,6 +477,13 @@ footer #container .divs .itens ul li {
   margin: 15px 0;
   font-size: 11pt;
   color: #555;
+  align-items: center;
+  text-align: left;
+  
+}
+
+footer #container .divs .itens ul li img {
+  margin: 0 15px 0 0;
 }
 
 footer #container .divs .itens ul.links li {
