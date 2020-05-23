@@ -249,7 +249,6 @@ section#section-02 .containers:first-child {
 section#section-02 .containers div.content {
   width: 100%;
   max-width: 460;
-  min-width: 450px;
 }
 
 section#section-02 .containers .imgs {
@@ -604,9 +603,7 @@ footer #container .images img.img-x {
 
   section#section-02 .containers .imgs {
     max-width: 580px;
-    min-width: 580px;
     max-height: 400px;
-    min-height: 400px;
   }
 
   footer #container .images img.img-x {
@@ -625,15 +622,13 @@ footer #container .images img.img-x {
   }
 
   section#section-02 .containers .imgs {
-    max-width: 480px;
-    min-width: 480px;
-    max-height: 300px;
-    min-height: 300px;
+    width: 480px;
+    min-width: 0;
   }
 
   section#section-02 .containers .imgs .circle-01 {
-    width: 260px;
-    height: 260px;
+    width: 210px;
+    height: 210px;
   }
 
   section#section-02 .containers .imgs .circle-02 {
@@ -643,8 +638,8 @@ footer #container .images img.img-x {
 
   section#section-02 .containers .imgs .circle-03,
   section#section-02 .containers .imgs .circle-04 {
-    width: 260px;
-    height: 260px;
+    width: 210px;
+    height: 210px;
   }
 
   footer #container .images img.img-x {
@@ -671,16 +666,12 @@ footer #container .images img.img-x {
     font-size: 55%;
   }
 
-  section#section-02 .containers {
-    padding-left: 20px;
-    padding-right: 20px;
+  section#section-02 .containers:first-child {
+    padding-bottom: 80px;
   }
 
   section#section-02 .containers .imgs {
-    max-width: 380px;
-    min-width: 380px;
-    max-height: 250px;
-    min-height: 250px;
+    width: 400px;
   }
 
   section#section-02 .containers .imgs .circle-01 {
@@ -852,14 +843,16 @@ footer #container .images img.img-x {
   }
 
   section#section-02 .containers .content {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+    margin: 50px auto;
   }
 
   section#section-02 .containers .imgs {
     order: 1;
     margin: 0 auto;
+  }
+
+  section#section-02 .containers .imgs img.main {
+    width: 70%;
   }
 
   div.form-container form.form {
@@ -930,6 +923,14 @@ footer #container .images img.img-x {
   
   div.form-container .form img#line {
     display: none;
+  }
+
+  section#section-02 .containers {
+    margin: 0;
+  }
+
+  section#section-02 .container-02 {
+    margin-top: 0;
   }
 }
 
