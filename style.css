@@ -387,7 +387,9 @@ div.form-container form.form .input-block label {
   font-size: 1.3rem;
 }
 
-div.form-container form.form .input-block input, textarea {
+div.form-container form.form .input-block input,
+textarea,
+select {
   width: 100%;
   height: 40px;
   margin-bottom: 20px;
@@ -395,6 +397,8 @@ div.form-container form.form .input-block input, textarea {
   border-bottom: #eee 1px solid;
   outline: none;
   transition: 0.3s;
+  padding: 4px;
+  color: var(--primary-color);
 }
 
 div.form-container form.form .input-block textarea {
@@ -1043,8 +1047,6 @@ footer #container .images img.img-x {
     height: 150px;
   }
 }
-
-
 
 /* general settings */
 

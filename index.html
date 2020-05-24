@@ -33,7 +33,7 @@
         <div class="search-box">
           <input
             placeholder="Search Here"
-            type="text"
+            type="search"
             name="search"
             id="search"
           >
@@ -127,7 +127,19 @@
 
         <div class="input-block">
           <label for="problem">Which Related Problem You Are Facing?</label>
-          <input required type="" name="problem" id="problem" placeholder="Select One">
+
+          <select
+            required
+            name="problem"
+            id="problem"
+            aria-placeholder="Select One"
+          >
+            <option disabled selected value="">Select One</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+          </select>
         </div>
 
         <div class="input-block">
